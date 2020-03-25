@@ -173,3 +173,86 @@
   width: 100%;
   border: 1px solid #F2F2F2;
 }
+.page-title span{
+  background: linear-gradient(-135deg, rgba(255,255,255,0) 8%,#28a0fc 8%,hsl(206.03773584906,97%,45%) 92%,rgba(255,255,255,0) 92%);
+  padding: 8px 30px;
+  font-size: 15px;
+  line-height: 1.5em;
+  float: right;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+footer{ 
+  background: #e6e6e6; 
+  height:100%;
+  width:100%; 
+  height:180px; 
+  padding-top: 30px;
+}
+
+.text {
+  color: #424242;
+  font-size: 60px;
+  text-align: center;
+}
+
+.text2 {
+  color: #424242;
+  font-size: 15px;
+  text-align: center;
+}
+
+.text3 {
+  color: #424242;
+  font-size: 15px;
+  text-align: center;
+  float: center;
+}
+
+#page-footer {
+  display: none !important;
+}
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-right-radius: unset !important; 
+  color: hsla(0,0%,37%,1);
+  border-top-left-radius: unset !important; 
+  
+}
+.nav-tabs .nav-link.active{
+  border-top: 5px solid hsla(206,100%,35%,1);
+}
+.nav-tabs .nav-item {
+  font-size: 25px;
+}
+.tab-cat{
+  padding: 10px;
+  margin-bottom: 15px;
+  background: #fff;
+}
+.tab-cat a{
+  color: hsla(0,0%,37%,1) !important;
+}
+.tab-cat.active{
+  background: hsla(206,100%,35%,1);
+}
+.tab-cat.active a{
+  color: #fff !important;
+}
+.tab-content .col-4{
+  margin-bottom: 20px;
+}
+.myCard{
+  max-height: 412px;
+  box-shadow: 0 2px 5px hsla(0,0%,89%,1);
+}
+.myCard img{
+  max-height: 140px;
+  width:100%;
+}
+.myCard b{
+  margin-top: 10px;
+}
