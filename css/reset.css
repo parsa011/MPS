@@ -128,3 +128,6 @@ a {
 .p-t-40{
     padding-top: 40px !important;
 }
+.box-shadow{
+    box-shadow: 0 1.6px 3.6px 0 hsla(0,0%,0%,.132), 0 0.3px 0.9px 0 hsla(0,0%,0%,.108);
+}
