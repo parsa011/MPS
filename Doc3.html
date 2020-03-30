@@ -1,0 +1,309 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asp.net مستندات</title>
+    <!--styles-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="Lib/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--/styles-->
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--navbar-->
+        <div class="row nav-row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#">
+                        <img src="Images/microsoft-logo-dark.png" height="30" alt="">
+                    </a> |
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">صفحه اصلی <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">.Net</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Asp.Net</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">C#</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sql server</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Azure</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <button class="btn btn-defualt my-2 my-sm-0" type="submit">بگرد</button>&nbsp;
+                            <input class="form-control mr-sm-2" type="search" placeholder="چیز خاصی میخوای ؟؟"
+                                aria-label="Search">
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 border-bottom">
+                <div class="toolbar p-1">
+                    <ul> 
+                        <li>
+                            <a href="#!">ورود</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="d-inline-block text-dark">به اشتراک گذاری</a>
+                            <span class="fa fa-share-alt fa-xs"></span>
+                        </li>
+                        <li>
+                            <a href="#!" class="d-inline-block text-dark">نشان کردن</a>
+                            <span class="fa fa-bookmark fa-xs"></span>
+                        </li>
+                    </ul>
+                  
+                </div>
+            </div>
+        </div>
+        <!--/navbar-->
+
+        <div class="row justify-content-center mb-3">
+            <div class="col-md-10 pt-4">
+                <div class="row">
+                    <div class="col-md-3">
+                        <form action="">
+                            <input class="form-control form-control-sm" type="text" placeholder="فیلتر با نام">
+                        </form>
+                        <ul class="cates mt-2">
+                            <li class="active"><a href="#!">مستند های #c</a></li>
+                            <li class="has-child" >
+                                <i class="fa fa-chevron-left fa-xs"></i>
+                                <a href="#!" onclick="openChild(this)"> شروع کنید</a>
+                                <ul class="d-none childList">
+                                    <li><a href="#!">شروع کار</a></li>
+                                    <li><a href="#!">ساخت اولین برنامه</a></li>
+                                    <li><a href="#!">برنامه hello world</a></li>
+                                    <li class="has-child">
+                                        <i class="fa fa-chevron-left fa-xs"></i>
+                                        <a href="#!" onclick="openChild(this)"> شروع کنید</a>
+                                        <ul class="d-none childList">
+                                            <li><a href="#!">شروع کار</a></li>
+                                            <li><a href="#!">شروع کار</a></li>
+                                            <li><a href="#!">شروع کار</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-child" >
+                                <i class="fa fa-chevron-left fa-xs"></i>
+                                <a href="#!" onclick="openChild(this)"> شروع کنید</a>
+                                <ul class="d-none childList">
+                                    <li><a href="#!">شروع کار</a></li>
+                                    <li><a href="#!">ساخت اولین برنامه</a></li>
+                                    <li><a href="#!">برنامه hello world</a></li>
+                                    <li class="has-child">
+                                        <i class="fa fa-chevron-left fa-xs"></i>
+                                        <a href="#!" onclick="openChild(this)"> شروع کنید</a>
+                                        <ul class="d-none childList">
+                                            <li><a href="#!">شروع کار</a></li>
+                                            <li><a href="#!">شروع کار</a></li>
+                                            <li><a href="#!">شروع کار</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">
+                        <h3>مقالات #C</h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،</p>
+                        <div class="row docDetails-cat">
+                            <div class="col-sm-4 mb-2">
+                                <div class="card box-shadow">
+                                    <div class="card-body">
+                                        <h5 class="card-title">یادگیری ساخت برنامه در #C</h5>
+                                        <hr/>
+                                        <div class="col-12">
+                                            <h6 class="text-muted">
+                                                <i class="fa fa-books"></i>
+                                                برای شروع
+                                            </h6>
+                                            <ul>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                            </ul>
+                                        </div>
+                                        <hr/>
+                                        <div class="col-12">
+                                            <h6 class="text-muted">
+                                                <i class="fa fa-books"></i>
+                                                برای شروع
+                                            </h6>
+                                            <ul>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card box-shadow">
+                                    <div class="card-body">
+                                        <h5 class="card-title">یادگیری ساخت برنامه در #C</h5>
+                                        <hr/>
+                                        <div class="col-12">
+                                            <h6 class="text-muted">
+                                                <i class="fa fa-books"></i>
+                                                برای شروع
+                                            </h6>
+                                            <ul>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                            </ul>
+                                        </div>
+                                        <hr/>
+                                        <div class="col-12">
+                                            <h6 class="text-muted">
+                                                <i class="fa fa-books"></i>
+                                                برای شروع
+                                            </h6>
+                                            <ul>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card box-shadow">
+                                    <div class="card-body">
+                                        <h5 class="card-title">یادگیری ساخت برنامه در #C</h5>
+                                        <hr/>
+                                        <div class="col-12">
+                                            <h6 class="text-muted">
+                                                <i class="fa fa-books"></i>
+                                                برای شروع
+                                            </h6>
+                                            <ul>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                            </ul>
+                                        </div>
+                                        <hr/>
+                                        <div class="col-12">
+                                            <h6 class="text-muted">
+                                                <i class="fa fa-books"></i>
+                                                برای شروع
+                                            </h6>
+                                            <ul>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card box-shadow">
+                                    <div class="card-body">
+                                        <h5 class="card-title">یادگیری ساخت برنامه در #C</h5>
+                                        <hr/>
+                                        <div class="col-12">
+                                            <h6 class="text-muted">
+                                                <i class="fa fa-books"></i>
+                                                برای شروع
+                                            </h6>
+                                            <ul>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                            </ul>
+                                        </div>
+                                        <hr/>
+                                        <div class="col-12">
+                                            <h6 class="text-muted">
+                                                <i class="fa fa-books"></i>
+                                                برای شروع
+                                            </h6>
+                                            <ul>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                                <li><a href="#!">شروع کنید</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <footer>
+        <h1 class="text">MSP</h1>
+        <h2 class="text2">&copy; کپی رایت</h2>
+        <h2 class="text3">-پارسا محمودی-</h2>
+    </footer> -->
+    <!--scripts-->
+    <script src="Lib/Core/jquery-3.3.1.min.js"></script>
+    <script src="Lib/Bootstrap/js/bootstrap.min.js"></script>
+    <script src="Scripts/Main.js"></script>
+    <script src="Scripts/treeViewList.js"></script>
+
+    <!-- <script>
+        function openChild(li) {
+            let childList = null;
+            for (var i = 0; i < li.childNodes.length; i++) {
+                if (li.childNodes[i].className == "childList") {
+                    childList = doc.childNodes[i];
+                    break;
+                }
+            }
+            childList.classList.toggle('d-none');
+        }
+    </script> -->
+    <!--/scripts-->
+
+</body>
+
+</html>
