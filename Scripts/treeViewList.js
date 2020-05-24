@@ -1,5 +1,3 @@
-let li = document.querySelector('li.has-child');
-
 function openChild(a) {
     const icon = a.previousElementSibling;
     if (icon.style.transform == 'rotate(-90deg)') {
